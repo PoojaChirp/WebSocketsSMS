@@ -13,20 +13,12 @@ repositories {
 }
 
 dependencies {
-	testCompile group: 'junit', name: 'junit', version: '4.12'
-	implementation group: "com.twilio.sdk", name: "twilio", version: "7.46.0"
-
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation group: "com.twilio.sdk", name: "twilio", version	: "7.47.2"
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	compile("org.springframework.boot:spring-boot-starter-websocket")
-	compile("org.webjars:webjars-locator-core")
-	compile("org.webjars:sockjs-client:1.0.2")
-	compile("org.webjars:stomp-websocket:2.3.3")
-	compile("org.webjars:bootstrap:3.3.7")
-	compile("org.webjars:jquery:3.1.0")
-	compile("org.springframework.boot:spring-boot-starter-actuator")
 }
 
 test {
