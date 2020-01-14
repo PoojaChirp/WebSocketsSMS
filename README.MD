@@ -5,7 +5,7 @@
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-***http://https://www.twilio.com/.com***
+***https://www.twilio.com/.com***
 
 # Send SMS in Your Spring Boot App
 
@@ -65,6 +65,7 @@ $ ./ngrok http 8080
 $ ./gradlew bootRun
 ```
 
+> Test the app by sending a SMS through localhost:8080
 ---
 
 ## Support
